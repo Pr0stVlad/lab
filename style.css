@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background-color: #f2f4f8;
+}
+
+h2 {
+  margin-top: 0;
+  color: #2b4c7e;
+}
+
+a {
+  color: #2b4c7e;
+}
+
+.header {
+  background-color: #4a4ec4;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.header h1 {
+  margin: 0 0 6px 0;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header p {
+  margin: 0;
+  color: #cfdaee;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px;
+  background-color: white;
+  border-bottom: 2px solid #d5dbe8;
+}
+
+.menu a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #2b4c7e;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: #e4eaf5;
+}
+
+.menu a.active {
+  background-color: #4a4ec4;
+  color: white;
+}
+
+.page {
+  max-width: 900px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  width: 270px;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #ccd3e0;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #4a4ec4;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+.card .btn {
+  margin-top: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #4a4ec4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1f3a63;
+}
+
+form {
+  max-width: 420px;
+}
+
+label {
+  display: block;
+  margin: 14px 0 4px 0;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid #aab3c5;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #8fb0e6;
+}
+
+form .btn {
+  margin-top: 18px;
+}
+
+ol {
+  padding: 12px 12px 12px 36px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #ccd3e0;
+  border-radius: 8px;
+}
+
+.footer {
+  padding: 16px;
+  text-align: center;
+  color: #666;
+  background-color: #e4e8f0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* ===== Для телефонів ===== */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
